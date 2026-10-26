@@ -17,6 +17,7 @@ public class SensorProductor extends Thread {
 		for (int i = 0; i < 10; i++) {
 			boolean guardado = b.guardar(i); // Tengo que llamar a un objeto, no clase
 			
+			// Espera activa: espera y le seguimos pidiendo cosas
 			while (!guardado) {
 				guardado = b.guardar(i); // Si no se ha guardado, lo reintenta
 			}

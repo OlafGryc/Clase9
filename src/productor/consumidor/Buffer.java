@@ -14,6 +14,7 @@ public class Buffer {
 		return false;
 	}
 	
+	// Si pongo synchronized en la cabecera, por defecto cierra con this: synchronized(this)
 	public synchronized int sacar() {
 		if (lleno) {
 			this.lleno = false;
