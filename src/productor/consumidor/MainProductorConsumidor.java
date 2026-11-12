@@ -6,7 +6,7 @@ public class MainProductorConsumidor {
 		Buffer b = new Buffer();
 		
 		Thread p = new SensorProductor(b);
-		Thread c = new SensorConsumidor(b);
+		Thread c = new SensorConsumidor(b);  
 		
 		p.start();
 		c.start();
